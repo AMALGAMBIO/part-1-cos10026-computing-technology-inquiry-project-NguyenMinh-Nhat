@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">  
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="CWA Help Desk Appointment">
+        <meta name="keywords" content="CWA Help Desk Appointment">
+        <meta name="author" content="Nguyen Minh Nhat">
+        <title>CWA Help Desk Appointment</title>
+    </head>
+    <body>  
+        <div>
+            <img src="logo.png">
+            <h1>CWA Help Desk Appointment</h1>
+            <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+            <p>Check Blackboard for when CWA tutors will be there</p>
+        </div>
+        <div>
+            <form method = "post" action = "http://mercury.swin.edu.au/it000000/formtest.php">
+                <fieldset>
+                    <legend>Student details</legend>
+                    <label for="studentid">Student ID:</label>
+                    <input type = "number" id = "studentid" name = "studentdetails" required>
+                    <br>
+                    <br>
+                    <label for="givenname">Given Name:</label>
+                    <input type = "text" id = "givenname" name = "studentdetails" maxlength="15" pattern = "[A-Za-z]+" required>
+                    <label for="familyname">Family Name:</label>
+                    <input type = "text" id = "familyname" name = "studentdetails"  maxlength="15" pattern = "[A-Za-z]+" required>
+                </fieldset> 
+                <br>    
+                <fieldset>
+                    <legend>Your Unit</legend>
+                    <input type = "radio" id = "COS10011" name = "unit" value = "COS10011" required>Cos10011
+                    <input type = "radio" id = "COS60004" name = "unit" value = "COS60004" required>COS60004
+                    <input type = "radio" id = "COS60007" name = "unit" value = "COS60007" required>COS60007
+                    <br>
+                    <p>Your Tutor: <select name = "tutor" id = "yourtutor" required>   
+                        <option value = "">Please select</option>
+                        <option value = "Tutor 1">Tutor 1</option>
+                        <option value = "Tutor 2">Tutor 2</option>
+                    </select>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Issue</legend>
+                    Html <input type = "checkbox" id = "Html" name = "issue" value = "Html">
+                    CSS <input type = "checkbox" id = "CSS" name = "issue" value = "CSS">
+                    JavaScript <input type = "checkbox" id = "JavaScript" name = "issue" value = "JavaScript">
+                    PHP <input type = "checkbox" id = "PHP" name = "issue" value = "PHP">
+                    MySQL <input type = "checkbox" id = "MySQL" name = "issue" value = "MySQL">
+                    <br>
+                        <p>Description of issue
+                        <br>
+                        <textarea placeholder="Describe your issue" id = "descriptionissue" rows="4" cols="50" required></textarea>
+                        </p>
+                </fieldset>
+                <br>
+                <fieldset> 
+                    <legend>Prefered Data/Time</legend>
+                    Data<input type = "date" id = "date" name = "date" required>
+                    Time<input type = "text" id = "time" name = "time" placeholder ="00:00" pattern="placeholder" required>
+                </fieldset>
+                <br>
+                <div>
+                    <input type = "submit" value = "Book">
+                    <input type = "reset" value = "ResetForm">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
