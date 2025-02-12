@@ -1,0 +1,78 @@
+/*
+filename: [lab04]
+author: [Minh Nhat]
+created: [4/2]
+last modified: [4/2]
+description: [html files it refers to (if known)]
+*/
+
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(0, 128,128);
+}
+
+aside, footer {
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    border: 1px solid black;
+}
+
+#images {
+    text-align: center;
+}
+
+#h3headings {
+    color: red;
+}
+
+.special {
+    color:darkorange;
+    front-weight: bold;
+}
+
+.month {
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.2cm 0.6cm;
+    border: 4px solid black;
+    background-color: lightblue;
+    border-color: darkblue;
+}
+
+ol {list-style-type: lower-roman;}
+ul {list-style-type: square;}
+
+
+table {
+    width: 20%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #000000;
+}   
+
+thead th {
+    background-color: #f2f2f2;
+}
+
+#savings {
+    text-align: center;
+}
+
+
+
